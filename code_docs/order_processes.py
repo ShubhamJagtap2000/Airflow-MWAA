@@ -78,4 +78,4 @@ with DAG('user_processing', start_date = datetime(2022, 1, 1),
     )
     
     #order is important
-    create_table >> is_api_available >> extract_user >> processed_user >> store_user
+    create_table >> is_api_available >> extract_user >> process_user >> store_user
