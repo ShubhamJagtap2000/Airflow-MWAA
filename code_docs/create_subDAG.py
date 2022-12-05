@@ -24,10 +24,9 @@ def subdag_downloads(parent_dag_id, child_dag_id, args):
     
     return dag
 
-
-```py
 # DAG code for above subDAG
 
+```py
 from airflow import DAG
 from airflow.operators.bash import BashOperator
 from airflow.operators.subdag import SubDagOperator
