@@ -43,5 +43,4 @@ with DAG('group_dag', start_date = datetime(2022, 1, 1),
     task_id = 'downloads',
     subdag = subdag_downloads(dag.dag_id, 'downloads', args)
   )
-  
-  
+  ```
